@@ -55,7 +55,7 @@ if ss.positive != '' and ss.negatives != '' and ss.neutre !='':
 narrator = ss.narrator
 # get only values of the dataframe corresponding to the value of the text input 'narrator' in the sidebar
 if narrator != '':
-    edited_df = edited_df[edited_df['narrator'] == int(narrator)]
+    edited_df = edited_df[edited_df['narrator'] == float(narrator)]
     # put some space between the two dataframes
     st.write("-----------")
 
